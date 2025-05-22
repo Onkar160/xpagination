@@ -26,8 +26,8 @@ function App() {
         setOriginalData(data);
       })
       .catch((error) => {
-        alert(error);
-        console.error(error);
+        alert("failed to fetch data");
+        console.error("failed to fetch data: ", error);
       });
   }, []);
 
