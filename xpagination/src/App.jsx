@@ -25,7 +25,10 @@ function App() {
         // console.log(data);
         setOriginalData(data);
       })
-      .catch((error) => console.error(error));
+      .catch((error) => {
+        alert(error);
+        console.error(error);
+      });
   }, []);
 
   //updating the current data on currentPage change or original data change
